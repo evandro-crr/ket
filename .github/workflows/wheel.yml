@@ -16,5 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
-      run:  py setup.py bdist_wheel -p  win-amd64
+    - name: Install dependencies  
+      run: py -m pip install wheel
+    - name: Build wheel
+      run: py setup.py bdist_wheel -p win-amd64
