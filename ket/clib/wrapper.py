@@ -19,7 +19,7 @@ import os
 
 def os_lib_name(lib):
     if os.name == 'nt':
-        return f'lib{lib}.dll'
+        return f'{lib}.dll'
     if os.uname().sysname == 'Linux':
         return f'lib{lib}.so'
     if os.uname().sysname == 'Darwin':
