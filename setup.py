@@ -76,4 +76,5 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
     ],
     entry_points={'console_scripts': ['ket = ket.__main__:__ket__']},
+    setup_requires=['wheel'],
 )
