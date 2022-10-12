@@ -30,6 +30,6 @@ jobs:
     - name: Mac version
       run: sw_vers
     - name: Install dependencies  
-      run: python3 -m pip install wheel
+      run: python3 -m pip install twine
     - name: Build wheel
       run: python3 setup.py bdist_wheel -p macosx_11_7_x86_64
